@@ -106,8 +106,10 @@ header{
  -------------------------*/
 
  .popular-collection{
-    max-width: 1047px;
+    width: 1047px;
     height: 1662px;
+    display: flex;
+    flex-direction: column;
      margin: 0 auto 100px;
  }
  .header{
@@ -277,4 +279,80 @@ footer > div{
     width: 32px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
+}
+
+
+/* media query start here  */
+@media only screen and (max-width:688px) {
+    
+   nav{
+       display: flex;
+       width: 100%;
+       justify-content: space-between;
+   }
+   .navigation{
+       display: none;
+   }
+   .banner{
+       flex-direction: column;
+       width: 100%;
+
+   }
+   h1{
+       font-size: 28px;
+       text-align: center;
+   }
+   .banner p{
+       text-align: center;
+       margin: auto 21px;
+   }
+   .banner img{
+       width: 100%;
+   }
+   .left-banner{
+       order: 1;
+       align-items: center;
+   }
+   .partners{
+       flex-wrap: wrap;
+   }
+   .popular-collection{
+       width: 329px;
+       margin: 0 auto 100px;
+       height: auto;
+   }
+   .collections{
+       grid-template-columns: repeat(1,1fr);
+       
+   }
+   .extra-part{
+       width: 100%;
+       flex-direction: column;
+       height: auto;
+       padding:15px 0;
+       border-radius: 0%;
+       margin: 0;
+   }
+   .extra-part > div{
+       width:95%;
+   }
+   .extra-part h2{
+    font-size: 28px;
+    }
+   .input{
+       flex-direction: column;
+       text-align: center;
+       width: 100%;
+   }
+   .extra-part input{
+       width:calc(100% - 14px);
+   }
+   .extra-part .click-button{
+       width:calc(100% - 50px);
+       
+   }
+  footer {
+     width: 100%;
+ }
+   
 }
