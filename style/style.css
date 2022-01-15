@@ -101,7 +101,10 @@ header{
  
 
 
- /* Popular collection */
+ /*-----------------------
+  Popular collection 
+ -------------------------*/
+
  .popular-collection{
     max-width: 1047px;
     height: 1662px;
@@ -175,6 +178,7 @@ h2{
     font-family: 'Roboto', sans-serif;
     size: 14px;
 }
+
 .footer{
     margin-top: 50px;
     text-align: right;
@@ -185,6 +189,57 @@ h2{
     color: #E02C6DDE;
     ;
 }
+
+/* extra part's style  */
+.extra-part{
+     max-width:887px;
+     margin: 0 auto 100px;
+     height: 220px;
+     background-color: #0A0826;
+     border-radius: 0 100px 0 100px;
+     color: white;
+     padding: 80px;
+     display: flex;
+     font-family: 'Poppins', sans-serif;
+     font-weight: 500;
+     gap: 30px;
+     align-items: center;
+}
+.extra-part > div{
+    width: 50%;
+}
+.extra-part h2{
+    font-size: 40px;
+}
+.extra-part div p{
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.input{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width:100%;
+}
+.extra-part input{
+    border: 0;
+    outline: 0;
+    height: 30px;
+    padding: 7px;
+    width: 282px;
+    
+}
+.extra-part .click-button {
+    margin-top: 0;
+    border-radius: 0%;
+    
+}
+
+/*--------------- 
+footer styles-
+--------------- */
+
+
 
 footer{
     height: 239px;
