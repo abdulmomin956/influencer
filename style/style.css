@@ -84,7 +84,7 @@ header{
      display: flex;
      justify-content: space-evenly;
      align-items: center;
-     width: 1110px;
+     max-width: 1110px;
      height: 110px;
      margin: 100px auto;
      border: 1px solid transparent;
@@ -93,3 +93,13 @@ header{
      height: 120px;
 
  }
+
+
+ /* Popular collection */
+.collection{
+    max-width: 314px;
+    height: 476px; 
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+}
