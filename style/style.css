@@ -32,6 +32,9 @@ header{
      align-items: center;
      margin:87px auto;
  }
+ .nav-bar{
+     display: none;
+ }
  .logo{
      font-size: 24px;
      font-weight: 700;
@@ -47,6 +50,9 @@ header{
  }
  ul a{
      color: black;
+ }
+ .search-button{
+     display: none;
  }
 
 
@@ -287,8 +293,14 @@ footer > div{
     
    nav{
        display: flex;
-       width: 100%;
+       width: 90%;
        justify-content: space-between;
+   }
+   .nav-bar{
+       display: block;
+   }
+   .search-button{
+       display: block;
    }
    .navigation{
        display: none;
@@ -296,7 +308,6 @@ footer > div{
    .banner{
        flex-direction: column;
        width: 100%;
-
    }
    h1{
        font-size: 28px;
@@ -307,9 +318,13 @@ footer > div{
        margin: auto 21px;
    }
    .banner img{
-       width: 100%;
+       width:70%;
    }
-   .left-banner{
+   .right-banner{
+       display: flex;
+       justify-content: center;
+   }
+    .left-banner{
        order: 1;
        align-items: center;
    }
@@ -355,4 +370,70 @@ footer > div{
      width: 100%;
  }
    
+}
+
+/* tablet media query */
+@media only screen and (min-width:689px) and (max-width:1047px) {
+    nav{
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+    }
+    .banner{
+        flex-direction: column;
+        width: 90%;
+    }
+    .left-banner{
+        order: 1;
+        align-items: center;
+    }
+    h1{
+        font-size: 38px;
+    }
+    .right-banner{
+        display: flex;
+       justify-content: center;
+    }
+    .banner img{
+        width:70%;
+    }
+    .popular-collection{
+        width: 688px;
+        margin: 0 auto 100px;
+        height: auto;
+    }
+    .collections{
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    .extra-part{
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        padding:40px 0;
+        border-radius: 0 20px 0 20px;
+    }
+    .extra-part > div{
+        width:90%;
+    }
+    .extra-part h2{
+     font-size: 28px;
+     }
+     .below-part{
+         display: flex;
+         flex-direction: column;
+        align-items: center;
+    }
+    .input{
+        justify-content: center;
+        width: 428px;
+    }
+    
+    /* .extra-part input{
+        width:calc(100% - 14px);
+    } */
+    /* .extra-part .click-button{
+        width:calc(100% - 50px);
+        
+    } */
 }
