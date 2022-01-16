@@ -87,6 +87,10 @@ header{
      padding-left: 8px;
  }
 
+.banner:hover img{
+transform: rotate(360deg);
+transition: transform 0.5s;
+}
 
 
 
